@@ -1,0 +1,564 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Sree Krushnadevaraya', serif;
+
+}
+.home{ 
+    background: url("../images/home/home-bg-2.jpg");   
+    background-position: center;
+    background-size:cover;
+    /* position: relative; */
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+#particles-js{
+    background-color: rgba(2, 1, 1, 0.457);
+    z-index: 1;
+}
+
+.particle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+    a.nav-link{
+    color:black;
+}
+
+a.nav-link.titleNav.active{
+    text-underline-position: auto;
+    border-bottom: 2px solid #003466;
+    border-top: 2px solid #003466;
+    background: transparent;
+    padding: 5px;
+    color:#E91E63;
+}
+.logo{
+    width:300px;
+    height: 150px;;
+}
+.text-logo{
+    color:#E91E63;
+    text-shadow: 2px 0 0 rgba(93, 59, 59, 0.726), -2px 0 0 rgba(255, 255, 255, 0.726), 0 2px 0 rgba(13, 166, 172, 0.726), 0 -2px 0 rgba(255, 9, 9, 0.726), 1px 1px rgba(255, 255, 255, 0.726), -1px -1px 0 rgb(14, 13, 13), 1px -1px 0 rgba(2, 0, 0, 0.726), -1px 1px 0 rgba(255, 255, 255, 0.726);
+
+}
+
+.typer{
+    z-index: 3;
+}
+.navbar{
+    /* position:sticky; */
+    margin-top:-73px;
+    width: 100%;
+    background-color:rgba(187, 162, 170, 0.808);
+    z-index:3;
+    box-shadow: 5px 5px 5px rgb(110, 109, 109);
+}
+.navbar-nav{
+    padding-left: 20%;
+}
+.nav-item{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size:90%;
+    padding-left: 4%;
+}
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color: #E91E63;
+}
+
+/**************************HOme -Text***************************************************************/
+.welcome-text{
+    color: #E91E63;
+    font-weight: 700;
+    padding: 5% 0 0 36%;
+    font-size: 70px;
+    position: absolute;
+    text-shadow: 2px 0 0 rgba(255, 255, 255, 0.726), -2px 0 0 rgba(255, 255, 255, 0.726), 0 2px 0 rgba(255, 255, 255, 0.726), 0 -2px 0 rgba(255, 255, 255, 0.726), 1px 1px rgba(255, 255, 255, 0.726), -1px -1px 0 rgb(250, 19, 19), 1px -1px 0 rgba(255, 255, 255, 0.726), -1px 1px 0 rgba(255, 255, 255, 0.726);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    z-index: 1;
+    top:15%;
+}
+
+.btn-contact{
+    border: solid  #E91E63;
+    color:white;
+    background:  #E91E63;
+    border-radius: 10px;
+    margin:20% 0 0 48%;
+    font-weight: 500;
+    position: absolute;
+    transition:all ease-in-out 1s;
+    z-index: 1;
+    top:19%;
+}
+
+.btn-contact:hover{
+    color:#E91E63;
+    background:white;
+    border: solid white;
+    transform: rotateZ(360deg);
+}
+
+/*******************Typing Effect********************************/
+
+.typer{
+    color: rgb(238, 237, 237);
+	font-family: Roboto;
+    text-decoration: none;
+    position: absolute;
+    padding: 11% 0 0 39%;
+    top:18%;
+    font-size:80px;
+ 
+    color:#37fa92c0;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+.flex {
+	display: flex;
+}
+.header-sub-title {
+  color: rgb(255, 254, 254);
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0.1em;
+}
+
+
+/*---------- About area css starts---------------*/
+
+.about-text-left h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+    line-height: 1;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.about-text-left h3 {
+    color: #212121;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+.about-text-left p{
+    text-align: right;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.about-text-left a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #E91E63;
+    padding: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.about-text-right {
+    margin-top: 90px;
+    font-size: 18px;
+}
+
+.about-text-left {
+    margin-top: 90px;
+}
+
+.about-text-left p {
+    text-align: right;
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.skillbar {
+    margin-bottom: 24px;
+    position: relative;
+    width: 100%;
+    display: block
+}
+
+.skillbar .skillbar-title {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.skillbar .skillbar-percent {
+    float: right;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.skillbar-bar {
+    background-color: #ededed;
+    width: 100%;
+    height: 5px
+}
+
+.skillbar-bar .skillbar-child {
+    width: 0;
+    height: 100%;
+    background-color: #606060;
+    -webkit-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color
+}
+/********************Custom********************************/
+
+.img-responsive{
+    
+   width:100%;
+    /* height: 80%; */
+    margin-top: 50%;
+
+}
+#about{
+    font-family: 'Sree Krushnadevaraya', serif;
+    /* height: auto; */
+
+}
+#skills{
+    text-transform: lowercase;
+
+    text-transform: capitalize;
+}
+.titleDiv{
+    position: absolute;
+    margin-left: 40%;
+    text-underline-position: auto;
+    border-bottom: 2px solid #E91E63;
+    border-top: 2px solid #E91E63;
+    padding: 5px;
+    padding-bottom: 15px
+
+}
+.titleNav:hover{
+    /* position: absolute; */
+    /* margin-left: 40%; */
+    text-underline-position: auto;
+    /* border-bottom: 2px solid #E91E63;
+    border-top: 2px solid #E91E63; */
+    /* padding: 5px; */
+    border-bottom: 2px solid rgb(241, 236, 238);
+    border-top: 2px solid rgb(243, 240, 241);
+    color:#E91E63;
+
+    /* padding-bottom: 15px */
+}
+.About{
+    /* position: ; */
+    margin-left: 46%;
+    padding-bottom: 15px
+}
+/* .line-one{
+    width: 300px;
+    height: 47px;
+    border-bottom: 1px solid rgb(245, 63, 123);
+    position: relative;
+    margin-left: 42%;   
+    
+} */
+
+/*-------About area css ends--------------*/
+/*--------------- Services area Starts--------------*/
+
+.services-area {
+	background: #F3F4F3;
+}
+
+.services-icon i {
+	font-size: 35px;
+	color: #E91E63;
+}
+
+.single-services:hover i{
+	color: #e42413;
+}
+
+.services-content h4 {
+	line-height: 1.9;
+	text-transform: uppercase;
+}
+
+.services-icon {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.single-services {
+	padding: 40px 20px;
+	margin: 0 15px 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.single-services:hover {
+	-webkit-transition: ease .09s;
+	-o-transition: ease .09s;
+	transition: ease .09s;
+}
+
+.single-services:hover .services-icon{
+	-webkit-transition: ease .3s;
+	-o-transition: ease .3s;
+	transition: ease .3s;
+}
+
+.single-services:hover .services-icon i {
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: .9s;
+	-o-transition: .9s;
+	transition: .9s;
+}
+
+.single-services:hover {
+	-webkit-transition: .9s;
+	-o-transition: .9s;
+	transition: .9s;
+}
+
+.single-services:hover .services-content {
+	color: #f13f2f;
+}
+
+.single-services:hover .services-content h4 {
+	color: #E91E63;
+}
+
+#services{
+    font-family: 'Sree Krushnadevaraya', serif;
+
+
+}
+.service-text{
+    margin-left: 42.3%;
+}
+/*--------------- Services area ends --------------*/
+/****************Number ARea******************-*/
+.number-area{
+    height: 200px;;
+    background-color: #E91E63;
+    color:white;
+}
+.number-text{
+    padding-top:5%;
+}
+
+/****************number area end******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- 10. Testimonial area starts-----------*/
+
+.testimonial-area{
+	background-image: url(../images/testimonial/testi-bg.jpg);
+	background-size:cover;
+	background-position: center center;
+    position: relative;
+    height: auto;
+    
+}
+
+.testimonial-area:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.block-quote p {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+	color: #444;
+	line-height: 160%;
+    font-style: italic;
+
+}
+
+.block-quote p:before {
+	content: "\275D";
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.block-quote p:after {
+	content: "\275E";
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.block-quote h2 {
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #E91E63;
+}
+
+.block-quote h3 {
+	font-size: 16px;
+}
+
+.testi-img {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+.testi-img img {
+	overflow: hidden;
+	width: 100%;
+	border-radius: 100%;
+}
+
+#testimonial-carousel:before{
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	border: 1px solid #CCC;
+}
+
+#testimonial-carousel {
+    position: relative;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 10%;
+}
+
+.testimonial-area .section-header h2 {
+    
+	color: #ffffff;
+}
+
+.box{
+    margin-left:15%;
+}
+/*-------Testimonial area ends----------*/
+
+
+
+
+
+
+
+
+/*------  Contact area starts-------*/
+
+
+#contact-form {
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 5%;
+}
+
+.single-contact i {
+    font-size: 30px;
+    color: #E91E63;
+}
+
+.single-contact .socials i {
+    font-size: 14px;
+    color: #000000;
+}
+
+.socials i:hover {
+    cursor: pointer;
+}
+
+.single-contact {
+    margin-bottom: 50px;
+}
+
+.contact-area .form-control{
+    border: none;
+    border-bottom: 2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.contact-area textarea.form-control{
+    border:2px solid #a2a2a2;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.single-contact h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn.btn-send {
+    background: #E91E63;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact-right h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.socials {
+    padding-top: 5%;
+}
+
+.socials i {
+    margin: 0 10px;
+}
+
+.single-contact {
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 5%;
+}
+
+.fiverr{
+    width:100px;
+}
+/*-------- Contact area ends----------- */
